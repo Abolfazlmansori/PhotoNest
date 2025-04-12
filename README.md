@@ -7,60 +7,82 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# PhotoNest - گالری تصاویر
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+**PhotoNest** یک گالری تصاویر ساده و کاربرپسند است که با استفاده از **Laravel** و **Tailwind CSS** ساخته شده است. این پروژه به کاربران این امکان را می‌دهد که تصاویر خود را آپلود کرده و در قالب یک گالری زیبا مشاهده کنند. همچنین، تصاویر آپلود شده به صورت مستقیم در صفحه گالری نمایش داده می‌شوند و کاربران می‌توانند بر روی تصاویر کلیک کرده و آن‌ها را در یک لایت‌باکس مشاهده کنند.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ویژگی‌ها
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **آپلود تصاویر**: کاربران می‌توانند تصاویر خود را از سیستم خود انتخاب کرده و آن‌ها را به گالری اضافه کنند.
+- **نمایش تصاویر**: گالری تصاویر به صورت ریسپانسیو و با طراحی جذاب نمایش داده می‌شود.
+- **لایت‌باکس**: تصاویر به صورت لایت‌باکس نمایش داده می‌شوند که امکان مشاهده تصویر در اندازه بزرگتر را می‌دهد.
 
-## Learning Laravel
+## تکنولوژی‌های استفاده شده
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Laravel**: فریمورک PHP برای ساخت بخش بک‌اند
+- **Tailwind CSS**: فریمورک CSS برای طراحی ریسپانسیو و زیبا
+- **GLightbox**: برای نمایش تصاویر در لایت‌باکس
+- **Swiper**: برای ساخت اسلایدرهای کاربرپسند
+- **هوش مصنوعی**: طراحی فرانت‌اند با کمک هوش مصنوعی، که برای بهبود تجربه کاربری و ساده‌سازی طراحی انجام شده است.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## نصب و راه‌اندازی
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **کلون کردن پروژه**:
+   ابتدا پروژه را از گیت‌هاب کلون کنید:
 
-## Laravel Sponsors
+   ```bash
+   git clone https://github.com/username/your-repo-name.git
+نصب وابستگی‌ها: وارد دایرکتوری پروژه شوید و دستور زیر را برای نصب وابستگی‌ها اجرا کنید:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+bash
+Copy
+Edit
+cd your-repo-name
+composer install
+تنظیمات محیط: فایل .env را از .env.example کپی کنید:
 
-### Premium Partners
+bash
+Copy
+Edit
+cp .env.example .env
+سپس تنظیمات دیتابیس و دیگر پیکربندی‌های لازم را در فایل .env انجام دهید.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+ایجاد جداول دیتابیس: با اجرای دستور زیر، جداول دیتابیس را بسازید:
 
-## Contributing
+bash
+Copy
+Edit
+php artisan migrate
+اجرای پروژه: برای اجرای پروژه، از دستور زیر استفاده کنید:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+bash
+Copy
+Edit
+php artisan serve
+حالا می‌توانید پروژه را در مرورگر خود در آدرس http://localhost:8000 مشاهده کنید.
 
-## Code of Conduct
+اسکرین‌شات‌ها
+گالری تصاویر
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+صفحه آپلود تصویر
 
-## Security Vulnerabilities
+دمو آنلاین
+برای مشاهده دمو آنلاین پروژه، می‌توانید به لینک زیر مراجعه کنید:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Demo of PhotoNest
 
-## License
+مشارکت در پروژه
+اگر دوست دارید به این پروژه کمک کنید، خوشحال می‌شویم که همکاری کنید. مراحل زیر برای مشارکت به شما کمک می‌کند:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+این پروژه را Fork کنید.
+
+تغییرات خود را اعمال کرده و Pull Request ارسال کنید.
+
+از پروژه لذت ببرید!
+
+نویسنده
+Abolfazl Mansori
+GitHub
+
+لایسنس
+این پروژه تحت لایسنس MIT منتشر شده است.
